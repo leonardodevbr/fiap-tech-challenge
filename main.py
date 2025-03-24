@@ -41,6 +41,20 @@ def main():
     plt.plot(route[:, 0], route[:, 1], marker='o', linestyle='-')
     plt.title("Rota otimizada por Algoritmo Genético")
     plt.grid(True)
+
+    def random_route_distance(cities, n=1000):
+        distances = []
+        for _ in range(n):
+            route = np.random.permutation(len(cities))
+            dist = distance(route)[0]
+            distances.append(dist)
+        return np.mean(distances), np.min(distances)
+
+    media_aleatoria, melhor_aleatoria = random_route_distance(cities)
+    print("\nMédia distância rota aleatória:", media_aleatoria)
+    print("Melhor distância rota aleatória:", melhor_aleatoria)
+    print("Distância Algoritmo Genético:", distance(best)[0])
+
     plt.show()
 
 if __name__ == "__main__":
