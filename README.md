@@ -11,14 +11,16 @@
 - Demonstração visual clara da otimização das rotas.
 
 
-## Testes e Resultados
+## Resultados dos testes comparativos:
 
-| Método                  | Distância média obtida  | Melhor distância obtida |
-|-------------------------|-------------------------|-------------------------|
-| Rotas Aleatórias        | ~XXX                    | ~YYY                    |
-| **Algoritmo Genético**  | -                       | **ZZZ** ✅              |
+| Método                | Distância Total |
+|----------------------|----------------------------|
+| Média rota aleatória  | 792.05          |
+| Melhor rota aleatória | 541.39         |
+| **Algoritmo Genético**   | **365.85**       |
 
-*(Substitua XXX, YYY e ZZZ pelos valores que o código imprimir no seu terminal após rodar os testes acima)*
+*Esses valores são os resultados obtidos ao executar o algoritmo.*
 
-## 🚀 Conclusão rápida
-O Algoritmo Genético demonstrou ser muito eficiente para resolver o problema do Caixeiro Viajante, encontrando rotas significativamente mais curtas do que as obtidas por rotas geradas aleatoriamente.
+## Conclusão
+O Algoritmo Genético reduziu drasticamente a distância da rota, mostrando-se eficiente para otimizar o trajeto entre cidades.
+
