@@ -44,11 +44,11 @@ git clone https://github.com/leonardodevbr/fiap-tech-challenge tech-challenge
 cd tech-challenge
 
 # Crie e ative o ambiente virtual (recomendado)
-python -m venv env
+python -m venv .venv
 # Windows
-env\Scripts\activate
+.venv\Scripts\activate
 # Linux/Mac
-source env/bin/activate
+source .venv/bin/activate
 
 # Instale as dependências
 pip install -r requirements.txt
