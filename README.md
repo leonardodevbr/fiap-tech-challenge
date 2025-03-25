@@ -1,26 +1,65 @@
-## Definição detalhada do Problema
+# 🍕 Pizzaria Delivery Cafarnaum - Otimização de Rotas com Algoritmo Genético
 
-**Problema Escolhido:** Otimização de Rotas – Caixeiro Viajante (TSP).
+## 🚀 Descrição do Problema
+Este projeto visa otimizar a rota de entregas de pizzas para uma pizzaria localizada na cidade de **Cafarnaum-BA**. O objetivo é reduzir o tempo e a distância total percorrida pelo entregador ao distribuir pizzas para diversos clientes espalhados pela cidade.
 
-**Objetivos:**  
-- Encontrar a rota mais curta possível que passa por 15 cidades exatamente uma vez.
-- Demonstrar a eficácia do Algoritmo Genético comparado com métodos convencionais (ex: rotas aleatórias).
+## 🎯 Objetivos Principais
+- Encontrar a rota mais curta e eficiente possível para entregas.
+- Reduzir significativamente o tempo total de entrega e custos associados.
 
-**Critérios de Sucesso:**  
-- Redução significativa da distância total das rotas.
-- Demonstração visual clara da otimização das rotas.
+## 📍 Locais Utilizados
+Foram utilizados 18 pontos de entrega reais distribuídos pela cidade de Cafarnaum-BA. As coordenadas foram obtidas através do Google Maps.
 
+## 🛠️ Metodologia Utilizada
+O problema foi solucionado utilizando um **Algoritmo Genético**, implementado em Python com as bibliotecas `DEAP`, `geopy`, `matplotlib` e `folium`.
 
-## Resultados dos testes comparativos:
+**Parâmetros principais:**
+- Tamanho da População: 200 indivíduos
+- Número de Gerações: 200 gerações
+- Taxa de crossover (cruzamento): 80%
+- Taxa de mutação: 20%
 
-| Método                | Distância Total |
-|----------------------|----------------------------|
-| Média rota aleatória  | 792.05          |
-| Melhor rota aleatória | 541.39         |
-| **Algoritmo Genético**   | **365.85**       |
+## 📈 Resultados Alcançados
+Após executar o algoritmo, obteve-se os seguintes resultados comparativos:
 
-*Esses valores são os resultados obtidos ao executar o algoritmo.*
+| Método                             | Distância Total (km) |
+|------------------------------------|----------------------|
+| Média rota aleatória               | ~14.81 km            |
+| Melhor rota aleatória obtida       | ~9.35 km             |
+| **Algoritmo Genético otimizado**   | **~6.22 km** ✅      |
 
-## Conclusão
-O Algoritmo Genético reduziu drasticamente a distância da rota, mostrando-se eficiente para otimizar o trajeto entre cidades.
+Observa-se claramente que o Algoritmo Genético obteve uma redução significativa na distância total da rota.
 
+## 🗺️ Visualização dos Resultados
+- **Mapa Interativo:** O arquivo `rota_otimizada_pizzaria.html` mostra a rota otimizada em um mapa interativo.
+- **Gráfico Estático:** Um gráfico da rota otimizada também é exibido no terminal ao executar o script Python.
+
+## 📦 Como executar o projeto (passo a passo):
+
+```bash
+# Clone o repositório
+git clone https://github.com/leonardodevbr/fiap-tech-challenge tech-challenge
+
+# Acesse o diretório
+cd tech-challenge
+
+# Crie e ative o ambiente virtual (recomendado)
+python -m venv env
+# Windows
+env\Scripts\activate
+# Linux/Mac
+source env/bin/activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute o script
+python main.py
+```
+
+## 📝 Conclusão
+A solução implementada demonstrou claramente a eficiência do Algoritmo Genético na otimização da rota de entregas, proporcionando economia de tempo, recursos e aumento na satisfação dos clientes da Pizzaria Delivery Cafarnaum-BA.
+
+## 💻 Desenvolvido por:
+### Leonardo Nunes Oliveira
+#### FIAP - Pós-graduação em IA para Devs
